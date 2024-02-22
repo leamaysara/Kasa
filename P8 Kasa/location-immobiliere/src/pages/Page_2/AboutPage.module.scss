@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style de la page d'accueil *//
+
+.cardsSection {
+    width: 100%;
+}
+
+.cardsContainer {
+    @include flex-column;
+    align-content: center;
+    gap: 38px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+  
