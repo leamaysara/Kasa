@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import WelcomePage from './pages/Page_1/WelcomePage';
-import AboutPage from './pages/Page_2/AboutPage';
-import ErrorPage from './pages/Page_4/ErrorPage';
-import RentalPage from './pages/Page_3/RentalPage';
+import WelcomePage from './pages/WelcomePage';
+import AboutPage from './pages/AboutPage';
+import RentalPage from './pages/RentalPage';
+import ErrorPage from './pages/ErrorPage';
 
 function AppRoutes() {
   return (
@@ -25,4 +25,4 @@ function AppRoutes() {
 
 export default AppRoutes;
 
-//* Fichier qui s'occupe des routes vers les différentes pages de KASA *//
+//* Fichier qui s'occupe des routes vers les différentes pages du site *//

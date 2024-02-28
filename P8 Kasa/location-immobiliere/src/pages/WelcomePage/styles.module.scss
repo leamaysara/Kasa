@@ -3,23 +3,29 @@
 
 //* Style de la page d'accueil *//
 
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .cardsLayout {
     @include flex-row;
     flex-wrap: wrap;
-    gap: 60px;
+    justify-content: center;
+    gap: 50px;
     padding : 50px;
     margin-top: 56px;
     margin-bottom: 56px;
     border-radius: 25px;
     background-color: $background-color;
 
-    @include small-screen {
-        background-color: $secondary-color;
+    @media screen and (max-width: 650px) {
+		background-color: $secondary-color;
         gap: 20px;
         padding: 0;
         margin-top: 22px;
-        margin-bottom: 27px;
-    }
+	}
 }
 
 .cardsContainer {

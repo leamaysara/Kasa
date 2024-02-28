@@ -1,20 +1,24 @@
-import React from 'react';
-import styles from '../Page_1/WelcomePage.module.scss';
-import accomodationsData from '../../datas/logements.json';
+import React from "react";
+import styles from "./styles.module.scss";
+import accomodationsData from "../../data/logements.json";
 
-import Header from '../../components/Header/header';
-import Banner from '../../components/Banner/banner';
-import Cards from '../../components/homeCards/card';
-import Footer from '../../components/Footer/footer';
+import Header from "../../components/Header/header";
+import Banner from "../../components/Banner/banner";
+import imageHomepage from "../../assets/homebanner.png";
+import Cards from "../../components/homeCards/card";
+import Footer from "../../components/Footer/footer";
 
 const WelcomePage = () => {
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <header>
         <Header />
       </header>
       <main>
-        <Banner />
+        <Banner
+          text="Chez vous, partout et ailleurs"
+          imageUrl={imageHomepage}
+        />
         <section className={styles.cardsContainer}>
           <div className={styles.cardsLayout}>
             {accomodationsData.map((accommodation) => (

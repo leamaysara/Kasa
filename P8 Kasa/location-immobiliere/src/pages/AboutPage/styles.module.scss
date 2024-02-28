@@ -3,19 +3,24 @@
 
 //* Style de la page d'accueil *//
 
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .cardsSection {
     width: 100%;
 }
 
 .cardsContainer {
     @include flex-column;
-    align-content: center;
     gap: 38px;
-    margin-top: 38px;
-    margin-bottom: 38px;
-    margin-left: 100px;
-    margin-right: 100px;
-    
+    margin: 38px 0;
+
+    @media screen and (max-width: 650px) {
+        margin: 19px 0;
+        gap: 20px;
+    }  
 }
 
-  

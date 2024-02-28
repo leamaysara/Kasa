@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './ErrorPage.module.scss'
+import styles from './styles.module.scss'
 
 import Header from '../../components/Header/header';
 import Footer from '../../components/Footer/footer';
 
 const ErrorPage = () => {
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <Header />
       <main>
         <div className={styles.errorPageContainer}>
