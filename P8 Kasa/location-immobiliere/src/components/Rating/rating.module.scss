@@ -1,5 +1,5 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/variables.scss';
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 //* Style des étoiles *//
 
@@ -10,7 +10,11 @@
 
 .starImg {
   width: 34px;
-  
+
+  @media screen and (max-width: 1320px) {
+    width: 25px;
+  }
+
   @media screen and (max-width: 650px) {
     width: 16px;
   }

@@ -1,60 +1,61 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 //* Les composants *//
 
 @mixin banner-styles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 @mixin banner-img {
-    display: flex;
-    border-radius: 25px;
-    object-fit: cover;
-    object-position: center;
+  display: flex;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @mixin banner-shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.3;
-    mix-blend-mode: darken;
-    border-radius: 25px;
-    content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.9);
+  content: "";
 }
 
 //* Les Displays *//
 
 @mixin header-display {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin footer-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @mixin collapse-display {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 @mixin flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
