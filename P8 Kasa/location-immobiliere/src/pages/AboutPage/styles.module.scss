@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style de la page d'accueil *//
+
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.cardsSection {
+    width: 100%;
+}
+
+.cardsContainer {
+    @include flex-column;
+    gap: 38px;
+    margin: 38px 0;
+
+    @media screen and (max-width: 650px) {
+        margin: 19px 0;
+        gap: 20px;
+    }  
+}
+
